@@ -1,0 +1,23 @@
+<?php
+
+function conectar(){
+    $host = 'localhost'
+    $user = 'root';
+    $pass = '';
+
+    $bd = 'crudphp';
+    
+    $con = mysql_connect($host,$user,$pass);
+
+    mysqli_select_db($con,$bd);
+
+    return $con;
+
+}
+
+
+
+
+
+
+?>
